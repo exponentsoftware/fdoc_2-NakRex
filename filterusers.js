@@ -8,7 +8,19 @@ function scoresGreaterThan85(users) {
     return newArr;
 }
 
+//add user if does not exist
+function addUser(users, user) {
+    let userExists = false;
+    for (let i = 0; i < users.length; i++) { 
+        if(users[i].name==user){
+            userExists = true;
+        }
+    }
+    if (!userExists) {
+        users.push(user)
+    }
 
+}
 const users = [
 	{
 		name:'Brook', 
