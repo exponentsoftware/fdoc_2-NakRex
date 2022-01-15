@@ -21,6 +21,24 @@ function addUser(users, user) {
     }
 
 }
+
+function addUserSkill(users, skill, username) {
+    for (let i = 0; i < users.length; i++) { 
+        if(users[i].name==username){
+            users[i].skills.push(skill)
+        }
+	}
+	return users
+}
+
+function editUser(users, nametoreplace, nametoreplacewith) {
+	for (let i = 0; i < users.length; i++) {
+		if (users[i].name == nametoreplace) {
+			users[i].name = nametoreplacewith;
+		}
+	}
+	return users;
+}
 const users = [
 	{
 		name:'Brook', 
@@ -66,4 +84,6 @@ const users = [
 	}
 	];
 
-console.log(scoresGreaterThan85(users));
+// console.log(scoresGreaterThan85(users));
+// console.log(addUserSkill(users, 'java', 'John' ));
+// console.log(editUser(users, 'John', 'Nasim'));

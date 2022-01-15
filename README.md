@@ -31,8 +31,7 @@ createArrayOfArrays(countries)
   ['Ireland', 'IRE', 7],
   ['Japan', 'JAP', 5],
   ['Kenya', 'KEN', 5]
-]
-```
+];
 
  2.	Write a function which filter users who has  scoresGreaterThan85,  
 	Write a function which addUser  to the user array only if the user does not exist.   
@@ -84,4 +83,3 @@ createArrayOfArrays(countries)
 	}
 	];
 
-	```
